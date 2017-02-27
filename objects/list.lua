@@ -161,7 +161,7 @@ function newobject:draw()
 		drawfunc(self)
 	end
 
-	love.graphics.setScissor(x, y, width, heightc)
+	love.graphics.setScissor(x, y, width, height)
 
 	for k, v in ipairs(children) do
 		local col = loveframes.util.BoundingBox(x, v.x, y, v.y, width, v.width, height, v.height)
