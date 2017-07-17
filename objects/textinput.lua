@@ -744,7 +744,6 @@ function newobject:RunKey(key, istext)
 				elseif indicatornum == utf8.len(text) and line < #lines then
 					local oldtext = lines[line + 1]
 					if utf8.len(oldtext) > 0 then
-						newindicatornum = utf8.len(lines[self.line])
 						lines[self.line] = lines[self.line] .. oldtext
 					end
 					table.remove(lines, line + 1)
