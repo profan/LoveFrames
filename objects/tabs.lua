@@ -635,6 +635,7 @@ function newobject:SetTabObject(id, object)
 
 	local children = self.children
 	local internals = self.internals
+	local state = self.state
 	local tab = children[id]
 
 	if tab then
