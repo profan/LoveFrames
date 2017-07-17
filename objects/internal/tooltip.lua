@@ -117,6 +117,7 @@ function newobject:update(dt)
 			local top = self:IsTopInternal()
 			local xoffset = self.xoffset
 			local yoffset = self.yoffset
+			local followobject = self.followobject
 			if followobject then
 				local ox = object.x
 				local oy = object.y
