@@ -73,6 +73,7 @@ function newobject:update(dt)
 	local cols     = {}
 	local basecols = {}
 	local dragging = self.dragging
+	local update = self.Update
 
 	if bartype == "vertical" then
 		self.width 		= self.parent.width
@@ -84,7 +85,6 @@ function newobject:update(dt)
 		local parent = self.parent
 		local listo = parent.parent.parent
 		local height = parent.height * (listo.height/listo.itemheight)
-		local update = self.Update
 		if height < 20 then
 			self.height = 20
 		else
