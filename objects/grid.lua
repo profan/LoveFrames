@@ -40,6 +40,7 @@ function newobject:update(dt)
 
 	local state = loveframes.state
 	local selfstate = self.state
+	local update = self.Update
 
 	if state ~= selfstate then
 		return
