@@ -296,6 +296,7 @@ function newobject:AddTab(name, object, tip, image, onopened, onclosed)
 	local tabnumber = self.tabnumber
 	local tabheight = self.tabheight
 	local internals = self.internals
+	local retainsize = self.retainsize
 	local state = self.state
 
 	object:Remove()
