@@ -16,6 +16,8 @@ skin.author = "Nikolai Resokav"
 skin.version = "1.0"
 skin.base = "Blue"
 
+local smallfont = love.graphics.newFont(10)
+
 -- controls 
 skin.controls = {}
 
