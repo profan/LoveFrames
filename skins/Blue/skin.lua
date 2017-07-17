@@ -1538,7 +1538,7 @@ function skin.DrawColumnListHeader(object)
 	local nohovercolor = skin.controls.columnlistheader_body_nohover_color
 	local textnohovercolor = skin.controls.columnlistheader_text_nohover_color
 
-	local name = ParseHeaderText(object:GetName(), x, width, x + width/2, twidth)
+	local name = ParseHeaderText(object:GetName(), x, width, x + width/2)
 	local twidth = font:getWidth(name)
 
 	if down then
